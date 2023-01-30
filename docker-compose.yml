@@ -9,9 +9,9 @@ services:
         external_url 'https://gitlab.cmd.local'
         # Add any other gitlab.rb configuration here, each on its own line
     ports:
-      - '80:8000'
-      - '443:4443'
-      - '22:22'
+      - '8080:80'
+      - '8443:443'
+      - '2222:22'
     volumes:
       - '$GITLAB_HOME/config:/etc/gitlab'
       - '$GITLAB_HOME/logs:/var/log/gitlab'
